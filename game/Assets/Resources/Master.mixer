@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 0eb1948ce9152e242a7f6ea1681286e1
+    name: VolumeControl
+  - guid: 5582d998f116d22429cf21212b02ed24
+    name: ToggleSpeaker
+  m_AudioMixerGroupViews:
+  - guids:
+    - 2e56a0609fccf6d498744afb6320c8e3
+    - c86ea5e2724c8dc4ba1c239f0055eba7
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 2e56a0609fccf6d498744afb6320c8e3
+  m_Children:
+  - {fileID: 243555551829449432}
+  m_Volume: 0eb1948ce9152e242a7f6ea1681286e1
+  m_Pitch: f566f444a3130da4ca39685ed93dcb7a
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: bed3f5907ca02be4ba76841163e36413
+  m_EffectName: Attenuation
+  m_MixLevel: e483896b28146f045ba39307c0179011
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 1e4a11bd8eadd794fbf1e22d3f69ce2b
+  m_FloatValues: {}
+  m_TransitionOverrides: {}
+--- !u!243 &243555551829449432
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ToggleSpeaker
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: c86ea5e2724c8dc4ba1c239f0055eba7
+  m_Children: []
+  m_Volume: 5582d998f116d22429cf21212b02ed24
+  m_Pitch: ff3cf6f736ee45a4ba1cb95279ba8939
+  m_Effects:
+  - {fileID: 244961087813126470}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244961087813126470
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6c0d270db4dbb7345a89df5c702a9ceb
+  m_EffectName: Attenuation
+  m_MixLevel: 375009cd6d7dc974a823b05b05c2d93d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
